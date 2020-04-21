@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="RecyclerViewScrollBar">
-        <attr name="scrollbarTrackHorizontal" format="reference" />
-        <attr name="scrollbarThumbHorizontal" format="reference" />
+    <declare-styleable name="SimpleScrollbar">
+        <attr name="trackBackground" format="reference" />
+        <attr name="thumbBackground" format="reference" />
     </declare-styleable>
 
 </resources>
