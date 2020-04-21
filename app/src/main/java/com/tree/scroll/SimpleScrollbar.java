@@ -30,8 +30,6 @@ public class SimpleScrollbar extends View {
 
     private Rect trackRect = new Rect();
 
-    private Rect thumbRect = new Rect();
-
     /**
      * 轨迹 background
      */
@@ -164,17 +162,17 @@ public class SimpleScrollbar extends View {
         if (thumbBackground != null) {
             switch (mScrollState) {
                 case START:
-                    thumbRect.set(0, 0, thumbRight, height);
+                    trackRect.set(0, 0, thumbRight, height);
                     break;
                 case SCROLLING:
-                    thumbRect.set(thumbLeft, 0, thumbRight, height);
+                    trackRect.set(thumbLeft, 0, thumbRight, height);
                     break;
                 case END:
-                    thumbRect.set(thumbLeft, 0, width, height);
+                    trackRect.set(thumbLeft, 0, width, height);
                     break;
                 default:
             }
-            thumbBackground.setBounds(thumbRect);
+            thumbBackground.setBounds(trackRect);
             thumbBackground.draw(canvas);
         }
     }
